@@ -8,16 +8,18 @@ import Plans from './components/Plans'
 import Reviews from './components/Reviews'
 import Footer from './components/Footer'
 import Video from './components/Video'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 function App() {
 
   return (
-    <div>
+    <>
+      <Navbar />
       <div className='hero'>
         <div className="overlay"></div>
         <Video />
         <div className='content'>
-          <Navbar />
           <Title />
           <Blend />
         </div>
@@ -27,7 +29,7 @@ function App() {
         <Reviews />
         <Footer />
       </div>
-    </div>
+    </>
   )
 }
 

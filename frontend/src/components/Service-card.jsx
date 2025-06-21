@@ -1,9 +1,14 @@
 import React from 'react'
 
-function ServiceCard() {
+function ServiceCard({
+  imageURL,
+  title,
+  description}) {
   return (
-    <div className='w-[8rem] h-[10rem] '>
-
+    <div className='service-card'>
+      <img src={imageURL} alt="" />
+      <h1>{title}</h1>
+      <p>{description}</p>
     </div>
   )
 }

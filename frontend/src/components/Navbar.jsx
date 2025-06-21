@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 function Navbar() {
 
