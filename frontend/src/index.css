@@ -1,0 +1,209 @@
+@import "tailwindcss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: transparent;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 10%;
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba(23, 25, 67. 0.7), rgb(19, 20, 42, 0));
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.logo span{
+    color: cyan;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-weight: 500;
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn1 {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: cyan;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 7rem;
+}
+
+.title-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags{
+    position: absolute;
+    top: 5%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.tags p{
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.tags button{
+    padding: 0.2rem;
+    border-radius: 10px;
+    font-weight: 500;
+    color: cyan;
+    cursor: pointer;
+    border: 2px solid white;
+    width: 7rem;
+    font-size: 17px;
+    height: 3rem;
+}
+
+.tags ol{
+    color: aqua;
+    list-style: none;
+    --height:4rem;
+    height: var(--height);
+    line-height: var(--height);
+    overflow: hidden;
+}
+
+.tags ol li{
+    animation:slide-up 22s ;
+    display: inline-block;
+}
+
+@keyframes slide-up{
+    10%,18.5%{
+        transform: translateY(0%);
+    }
+    18.9%,35.2%{
+        transform: translateY(-100%);
+    }
+    36%,55.2%{
+        transform: translateY(-200%);
+    }
+    55.8%,73.2%{
+        transform: translateY(-300%);
+    }
+    73.8%,92%{
+        transform: translateY(-400%);
+    }
+    92.2%,100%{
+        transform: translateY(0%);
+    }
+}
+
+.tags ol li span{
+    white-space: nowrap;
+    border-right: 0.4rem solid white;
+    animation: cursor 0.8s step-end infinite,typing 2s steps(20) 11 alternate;
+    display: inline-block;
+    overflow: hidden;
+}
+
+@keyframes cursor {
+    50%{ border-color: transparent; }
+}
+
+@keyframes typing {
+    0%,10%{
+        width: 0%;
+    }
+    70%,100%{
+        width: 100%;
+    }
+}
+
+.blend{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0%;
+    width: 100%;
+    height: 30%;
+    background-image: linear-gradient(to bottom, rgba(23, 25, 67,0), rgb(19, 20, 42));
+}
+
+.service, .reviews, .plans, .about, .video{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(19, 20, 42);
+    color: white;
+    font-size: larger;
+}
+
+.drop-down{
+    bottom: 30px;
+    position: absolute;
+    border-radius: 10px;
+    background-color:rgba(128, 128, 128, 0.2);
+    color: white;
+    width: 3rem;
+}
