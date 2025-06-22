@@ -1,11 +1,12 @@
 import express from 'express'
 const app = express();
+import service1 from 'backend/assets/service (1).jpg'
 
 app.get('/api/services', (req,res) => {
     const services = [
         {
             id:1,
-            imageURL:"",
+            imageURL: service1,
             title:"Personal Training",
             description:"Work one-on-one with certified fitness trainers who create custom workout plans tailored to your goals, fitness level, and lifestyle."
         },
@@ -42,6 +43,7 @@ app.get('/api/services', (req,res) => {
     ]
     res.send(services);
 })
+
 
 const port = process.env.PORT || 3000
 

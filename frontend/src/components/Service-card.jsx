@@ -6,7 +6,7 @@ function ServiceCard({
   description}) {
   return (
     <div className='service-card'>
-      <img src={imageURL} alt="" />
+      <img src={imageURL} />
       <h1>{title}</h1>
       <p>{description}</p>
     </div>

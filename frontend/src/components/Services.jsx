@@ -22,7 +22,7 @@ function Services() {
   return (
     <>
         <div className='service' id='services'>
-          Services {services.length}
+          <h1><span>Our</span> Services</h1>
           <div className="service-content">
             {
               services.map((service,index)=>(

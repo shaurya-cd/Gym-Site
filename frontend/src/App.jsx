@@ -10,22 +10,23 @@ import Footer from './components/Footer'
 import Video from './components/Video'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import PlanCard from './components/Plan_card'
 
 function App() {
 
   return (
     <>
-      <Navbar />
       <div className='hero'>
-        <div className="overlay"></div>
         <Video />
+        <Navbar />
         <div className='content'>
           <Title />
           <Blend />
         </div>
-        <Plans />
+        <PlanCard />
         <Services />
         <About />
+        <Plans />
         <Reviews />
         <Footer />
       </div>
