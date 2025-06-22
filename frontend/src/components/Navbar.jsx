@@ -18,7 +18,7 @@ function Navbar() {
         <a href='#about'>About Us</a>
         <a href='#plans'>Pricing</a>
         <a href='#review'>Review</a>
-        <button className="btn1" >Join Us</button>
+        <button className="btn1" ><a href="#join">Join Us</a></button>
       </div>
 
     </nav>

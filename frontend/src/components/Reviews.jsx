@@ -4,7 +4,7 @@ function Reviews() {
   return (
     <>
       <div className='reviews' id='review'>
-        Reviews
+
       </div>
     </>
   )

@@ -169,7 +169,7 @@ video{
 
 .about{
     width: 100%;
-    height: 80vh;
+    height: 120vh;
     background-color: rgb(14, 15, 31);
     color: rgb(184, 184, 184);
     font-size: larger;
@@ -177,7 +177,7 @@ video{
 
 .service{
     width: 100%;
-    height: 200vh;
+    height: 120vh;
     background-color: rgb(14, 15, 31);
     color: white;
     font-size: larger;
@@ -194,13 +194,14 @@ video{
 }
 
 .service-content{
-    width: 100vw;
-    height: 190vh;
+    width: 90vw;
+    height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin-bottom: 20px;
-    padding: 40px;
+    padding-left: 4rem;
+    margin-top: 2rem;
 }
 
 .service-card:hover {
@@ -218,7 +219,7 @@ video{
 }
 
 .service-card{
-    width: 80%;
+    width: 100%;
     height: 40vh;
     background-color: rgb(105, 105, 141);
     border-radius: 10px;
@@ -232,12 +233,6 @@ video{
     overflow-wrap: break-word;
     white-space: normal;
     padding: 20px;
-}
-
-.service-card image{
-    width: 100%;
-    height: 100%;
-    position: absolute;
 }
 
 .service-card h1{
@@ -259,7 +254,7 @@ video{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-left: 11rem;
+    padding-left: 14rem;
     padding-right: 11rem;
 }
 
@@ -314,11 +309,11 @@ video{
 
 .part1{
     position: absolute;
-    width: 45%;
+    width: 40%;
     height: 80vh;
     font-size: 1rem;
     right: 4rem;
-    margin-top: 8rem;
+    margin-top: 14rem;
 }
 
 .part1 h1{
@@ -353,8 +348,8 @@ video{
 }
 
 .l-plan-cards{
-    width: 15rem;
-    height: 9rem;
+    width: 18rem;
+    height: 13rem;
     border-radius: 10px;
     margin-top: 2rem;
     border: 0.1px solid rgb(26, 26, 56);
@@ -379,7 +374,7 @@ video{
 
 .plans ol{
     list-style: disc;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #b4a9a7;
 }
 
@@ -389,7 +384,7 @@ video{
 }   
 
 .basic, .standard, .premium{
-    width: 55%;
+    width: 70%;
     margin-left: 40px;
 }
 
@@ -413,6 +408,77 @@ video{
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.join{
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    padding: 0.2rem;
+    background-color: rgb(14, 15, 31);
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.join-left{
+    width: 45vw;
+    height: 100%;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.join-right{
+    width: 50vw;
+    height:100%;
+    padding-top: 7rem;
+}
+
+.jl-span{
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+}
+
+.join-left>hr{
+    position: absolute;
+    width: 15rem;
+    border: 2px solid cyan;
+    border-radius: 20%;
+    margin-top: -12%;
+}
+
+.email-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+    background-color: rgb(25, 26, 54);
+    width: 85%;
+    height: 10vh;
+    margin-left: 4rem;
+
+}
+
+.email-container input{
+    width: 70%;
+    height: 10vh;
+    font-size: 1.2rem;
+    background-color: transparent;
+    outline: none;
+    color: #b4a9a7;
+}
+
+.btn-join{
+    font-size: 1rem;
+    color: white;
+    border-radius: 0;
+    background-color: rgb(67, 100, 100);
+    font-weight: 800;
+    border: 0;
+    height: 3rem;
+}
+
 
 
 

@@ -11,6 +11,7 @@ import Video from './components/Video'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import PlanCard from './components/Plan_card'
+import Join from './components/Join'
 
 function App() {
 
@@ -27,7 +28,8 @@ function App() {
         <Services />
         <About />
         <Plans />
-        <Reviews />
+        {/* <Reviews /> */}
+        <Join />
         <Footer />
       </div>
     </>
