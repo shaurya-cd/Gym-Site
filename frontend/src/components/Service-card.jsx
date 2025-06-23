@@ -11,8 +11,10 @@ function ServiceCard({
         backgroundImage: `url(${imageURL})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',}}>
+      <div className="service-overlay">
       <h1>{title}</h1>
       <p>{description}</p>
+      </div>
     </div>
   )
 }

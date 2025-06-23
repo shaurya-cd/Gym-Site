@@ -19,7 +19,7 @@ function Title() {
           </ol> */}
         <p>Each rep is progress. Each drop of sweat, a step toward the version of you that you deserve.</p>
 
-        <button><a href="#join">Join Us</a></button>
+        <button><a href="#join" className='title-button'>Join Us</a></button>
       </div>
     </div>
     </>

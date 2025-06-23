@@ -38,7 +38,7 @@ function Join() {
         <div className="join-right">
           <form ref={form} className="email-container" onSubmit={sendEmail}>
             <input type="email" name='user_email' placeholder='Enter Your Email Address'/>
-            <button className='btn1 btn-join'> JOIN US</button>
+            <button className='btn-join'> JOIN US</button>
           </form>
         </div>
     </div>

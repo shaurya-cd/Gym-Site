@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'MyFont';
+  font-family: 'Myfont';
   src: url('../src/fonts/Underbold.ttf') format('truetype');
 }
 
@@ -9,7 +9,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Underbold";
     font-style: normal;
     background-color: transparent;
     font-family: 'MyFont', sans-serif;
@@ -63,17 +62,18 @@ video{
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: rgb(255, 255, 255);
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.logo img{
-    width: 60px;
+.logo a{
+    background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.logo span{
-    color: cyan;
+.logo img{
+    width: 60px;
 }
 
 .links {
@@ -88,16 +88,20 @@ video{
 .links a {
     text-decoration: none;
     color: white;
+    font-family: 'Poppins',sans-serif;
+    
 }
 
-.btn1 {
+.btn1 a{
     padding: 0.5rem;
     border-radius: 10px;
-    font-weight: 500;
-    color: cyan;
+    font-weight: 700;
     cursor: pointer;
-    border: 2px solid white;
+    border: 3px solid #de2672;
     width: 7rem;
+    background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title-wrapper{
@@ -140,18 +144,26 @@ video{
     font-weight: 400;
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
 }
 
-.tags button{
+.title-button{
     padding: 0.2rem;
     border-radius: 10px;
-    font-weight: 500;
-    color: cyan;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     cursor: pointer;
     border: 2px solid white;
-    width: 7rem;
+    width: 6rem;
     font-size: 17px;
     height: 3rem;
+    font-family: 'Poppins',sans-serif;
 }
 
 .blend{
@@ -185,7 +197,7 @@ video{
 
 .service{
     width: 100%;
-    height: 120vh;
+    height: 130vh;
     background-color: rgb(14, 15, 31);
     color: white;
     font-size: larger;
@@ -193,12 +205,14 @@ video{
 
 .service h1{
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
 .service span{
-    color: aqua;
+    background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .service-content{
@@ -223,7 +237,9 @@ video{
     border-radius: 10px;
     background-color:rgba(128, 128, 128, 0.2);
     color: white;
-    width: 3rem;
+    width: 4rem;
+    height: 2rem;
+    font-size: 1.3em;
 }
 
 .service-card{
@@ -240,19 +256,26 @@ video{
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
-    padding: 20px;
 }
 
 .service-card h1{
     font-weight: 700;  
-    font-size: 1.5rem; 
+    font-size: 1.7rem; 
+}
+
+.service-overlay{
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .service-card p{
     margin-top: 20px;
-    font-weight: 400;
-    font-size: 0.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
     text-align: center;
+    font-family: 'Poppins',sans-serif;
 }
 
 .plancard-container{
@@ -270,6 +293,7 @@ video{
     font-size: 0.6rem;
     font-weight: 500;
     text-align: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .s-plan-cards{
@@ -386,6 +410,11 @@ video{
     color: #b4a9a7;
 }
 
+.plans ol li{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
 .plans h2{
     font-weight: 700;
     font-size: 1.2rem;
@@ -419,7 +448,7 @@ video{
 
 .join{
     min-width: 98.8vw;
-    height: 60vh;
+    height: 40vh;
     display: flex;
     padding: 0.2rem;
     background-color: rgb(14, 15, 31);
@@ -438,9 +467,9 @@ video{
 }
 
 .join-right{
-    width: 50vw;
+    width: 60vw;
     height:100%;
-    padding-top: 7rem;
+    padding-top: 60px;
 }
 
 .jl-span{
@@ -451,7 +480,7 @@ video{
 .join-left>hr{
     position: absolute;
     width: 15rem;
-    border: 2px solid cyan;
+    border: 2px solid #dd2476;
     border-radius: 20%;
     margin-top: -12%;
 }
@@ -461,6 +490,7 @@ video{
     justify-content: space-between;
     align-items: center;
     padding: 3rem;
+    padding-right: 0;
     background-color: rgb(25, 26, 54);
     width: 85%;
     height: 10vh;
@@ -478,13 +508,15 @@ video{
 }
 
 .btn-join{
-    font-size: 1rem;
+    font-size: 2rem;
     color: white;
-    border-radius: 0;
-    background-color: rgb(67, 100, 100);
+    background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 800;
     border: 0;
     height: 3rem;
+    width: 5em;
 }
 
 
