@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'MyFont';
+  src: url('../src/fonts/Underbold.ttf') format('truetype');
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Underbold";
     font-style: normal;
     background-color: transparent;
+    font-family: 'MyFont', sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
-    overflow-x: hidden;
     left: 0%;
 }
 
@@ -59,7 +64,7 @@ video{
     align-items: center;
     gap: 0.5rem;
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 1.8rem;
     font-weight: 700;
 }
 
@@ -77,6 +82,7 @@ video{
     gap: 3rem;
     font-weight: 500;
     color: white;
+    font-size: 1.2rem;
 }
 
 .links a {
@@ -154,7 +160,7 @@ video{
     justify-content: center;
     bottom: 0%;
     width: 100%;
-    height: 30%;
+    min-height: 30%;
     background-image: linear-gradient(to bottom, rgba(23, 25, 67,0), rgb(14, 15, 31));
 }
 
@@ -169,7 +175,10 @@ video{
 .about{
     width: 100%;
     height: 120vh;
-    background-color: rgb(14, 15, 31);
+    background-image: url('../src/assets/FIGHT-CLUB-GRAPHIC.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: rgb(184, 184, 184);
     font-size: larger;
 }
@@ -320,7 +329,7 @@ video{
 }
 
 .plans{
-    width: 100%;
+    min-width: 100%;
     height: 100vh;
     background-color: rgb(14, 15, 31);
     color: rgb(255, 255, 255);
@@ -409,7 +418,7 @@ video{
 }
 
 .join{
-    width: 100vw;
+    min-width: 98.8vw;
     height: 60vh;
     display: flex;
     padding: 0.2rem;
