@@ -29,7 +29,7 @@ function Services() {
       transform:"translateX(-67%)",
       scrollTrigger:{
         trigger:serviceRef.current,
-        start: 'top 80%',         // when top of element hits 80% of viewport
+        start: 'top 10%',         // when top of element hits 80% of viewport
         end: 'bottom 20%',
         scrub:1,
         pin:true

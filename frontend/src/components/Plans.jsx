@@ -16,7 +16,7 @@ function Plans() {
       stagger: 0.2,
       scrollTrigger:{
         trigger:planRef.current,
-        start: 'top 80%',         // when top of element hits 80% of viewport
+        start: 'top 10%',         // when top of element hits 80% of viewport
         end: 'bottom 20%'
       }
     })
