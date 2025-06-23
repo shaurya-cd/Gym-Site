@@ -1,16 +1,42 @@
 import React from 'react'
 import ServiceCard from './Service-card'
 import axios from 'axios'
-import { useEffect,useState } from 'react'
+import { useEffect,useState,useRef } from 'react'
 import service1 from '../assets/service1.jpg'
 import service2 from '../assets/service2.jpg'
 import service3 from '../assets/service3.jpg'
 import service4 from '../assets/service4.jpg'
 import service5 from '../assets/service5.png'
 import service6 from '../assets/service6.png'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 function Services() {
+
+  const serviceRef = useRef()  
+
+  useGSAP(()=>{
+    gsap.from(serviceRef.current.children,{
+      opacity:0,
+      x:1000,
+      duration:1,
+      ease:'power3.easeIn',
+      stagger: 0.3,
+      transform:"translateX(-67%)",
+      scrollTrigger:{
+        trigger:serviceRef.current,
+        start: 'top 80%',         // when top of element hits 80% of viewport
+        end: 'bottom 20%',
+        scrub:1,
+        pin:true
+      }
+    })
+  })
+
 
   const services = [
         {
@@ -55,7 +81,7 @@ function Services() {
     <>
         <div className='service' id='services'>
           <h1 className='service-title'><span>Our</span> Services</h1>
-          <div className="service-content">
+          <div className="service-content" ref={serviceRef}>
             {
               services.map((service,index)=>(
                 <ServiceCard 

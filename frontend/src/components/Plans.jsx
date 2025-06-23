@@ -1,11 +1,32 @@
 import React from 'react'
+import { useEffect,useState,useRef } from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
 
 function Plans() {
+
+  const planRef = useRef()
+
+  useGSAP(()=>{
+    gsap.from(planRef.current.children,{
+      opacity:0,
+      duration:1,
+      y:30,
+      ease:'power3.easeIn',
+      stagger: 0.2,
+      scrollTrigger:{
+        trigger:planRef.current,
+        start: 'top 80%',         // when top of element hits 80% of viewport
+        end: 'bottom 20%'
+      }
+    })
+  })
+
   return (
     <>
       <div className='plans' id="plans">
         <h1 className='plan-title'>clubpass</h1>
-        <div className="l-plan-container">
+        <div className="l-plan-container" ref={planRef}>
           <div className="l-plan-cards l-basic">
               <h1>clubpass</h1>
               <h1 className='plan1'>Basic</h1>

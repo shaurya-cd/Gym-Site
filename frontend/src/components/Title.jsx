@@ -1,22 +1,27 @@
-import React from 'react'
+import { useGSAP } from '@gsap/react'
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
 function Title() {
+
+  const tag = useRef()
+
+  useGSAP(()=>{
+    gsap.from(tag.current.children,{
+      opacity:0,
+      duration:1,
+      y:30,
+      ease:'power3.easeIn',
+      stagger: 0.2
+    })
+  })
+
   return (
     <>
     <div className="title-wrapper">
-      <div className="tags">
+      <div className="tags" ref={tag}>
         <h1>Train Like Hell</h1>
         <span>Look Like Heaven</span>
-          {/* <ol>
-
-            <li><span>Build Muscle</span></li>
-            <li><span>Increased Strength</span></li>
-            <li><span>Lose Weight</span></li>
-            <li><span>Improve Health</span></li>
-            <li><span>Increase Flexibility</span></li>
-            <li><span>Boost Energy</span></li>
-          
-          </ol> */}
         <p>Each rep is progress. Each drop of sweat, a step toward the version of you that you deserve.</p>
 
         <button><a href="#join" className='title-button'>Join Us</a></button>

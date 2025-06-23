@@ -127,20 +127,6 @@ video{
     color: white;
     font-weight: 700;
     font-size: 50px;
-    opacity: 0;
-    transform: translateY(20px); /* starts lower */
-    animation: fadeUp 1s ease-out forwards;
-}
-
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 .tags p{
@@ -184,9 +170,12 @@ video{
 .reviews, .video{
     width: 100vw;
     height: 100vh;
-    background-color: rgb(14, 15, 31);
     color: white;
     font-size: larger;
+    background-image: url('../src/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .about{
@@ -202,14 +191,13 @@ video{
 
 .service{
     width: 100vw;
-    height: 130vh;
-    background-color: rgb(14, 15, 31);
+    height: 240vh;
     color: white;
     font-size: larger;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    background-color: rgb(14, 15, 31)
 }
 
 .service h1{
@@ -237,8 +225,8 @@ video{
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
-  background-color: aqua;
+  /* transform: translateY(-10px); */
+  box-shadow: 10px 0px 50px rgb(0, 0, 0);
 }
 
 .drop-down{
@@ -372,7 +360,7 @@ video{
 .plans{
     min-width: 100%;
     height: 100vh;
-    background-color: rgb(14, 15, 31);
+    background-color:  rgb(14, 15, 31);
     color: rgb(255, 255, 255);
     font-size: 2rem;
     display: flex;
@@ -389,8 +377,7 @@ video{
 
 .l-plan-container{
     width: 70%;
-    height: 70vh;
-    background-color: rgb(14, 15, 31);
+    height: 200vh;
     color: white;
     font-size: larger;
     display: grid;
@@ -500,7 +487,7 @@ video{
     -webkit-text-stroke: 2px rgb(255, 255, 255);
 }
 
-.join-left hr{
+.join-left>hr{
     position: absolute;
     width: 15rem;
     border: 2px solid #dd2476;
