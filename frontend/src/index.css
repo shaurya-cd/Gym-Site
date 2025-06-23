@@ -64,9 +64,10 @@ video{
     gap: 0.5rem;
     font-size: 1.8rem;
     font-weight: 700;
+    color: white;
 }
 
-.logo a{
+.logo span{
     background: linear-gradient(90deg, #ff512f, #dd2476); /* Customize colors */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -201,6 +202,10 @@ video{
     background-color: rgb(14, 15, 31);
     color: white;
     font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .service h1{
@@ -249,7 +254,6 @@ video{
     background-color: rgb(105, 105, 141);
     border-radius: 10px;
     box-shadow: 10px 10px 10px rgb(0, 0, 0);
-    margin: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,6 +363,10 @@ video{
     background-color: rgb(14, 15, 31);
     color: rgb(255, 255, 255);
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .plan-title{
@@ -368,7 +376,7 @@ video{
 }
 
 .l-plan-container{
-    width: 100%;
+    width: 70%;
     height: 70vh;
     background-color: rgb(14, 15, 31);
     color: white;
@@ -376,8 +384,8 @@ video{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding-left: 11rem;
-    padding-right: 11rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .l-plan-cards{

@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo1.png'
+import logo from '../assets/logo.png'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
@@ -9,7 +9,7 @@ function Navbar() {
     <nav>
       <div className="logo">
         <img src={logo} alt="logo" />
-        <a href='#home'>Fight <span>Club</span></a>
+        <a href='#home'><span>Fight</span> Club</a>
       </div>
 
       <div className='links'>
