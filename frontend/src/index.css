@@ -171,9 +171,9 @@ video{
     position: absolute;
     display: flex;
     justify-content: center;
-    bottom: -2.8vh;
+    bottom: -5vh;
     width: 100vw;
-    min-height: 30vh;
+    min-height: 55vh;
     background-image: linear-gradient(to bottom, rgba(23, 25, 67,0), rgb(14, 15, 31));
 }
 
@@ -293,7 +293,7 @@ video{
 
 .plancard{
     width: 100vw;
-    height: 60vh;
+    height: 50vh;
     background-color: rgb(14, 15, 31);
     display: flex;
     flex-direction: column;
