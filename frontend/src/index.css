@@ -163,7 +163,7 @@ video{
     justify-content: center;
     bottom: 0vh;
     width: 100vw;
-    min-height: 30vh;
+    min-height: 15vh;
     background-image: linear-gradient(to bottom, rgba(23, 25, 67,0), rgb(14, 15, 31));
 }
 
@@ -230,7 +230,7 @@ video{
     bottom: 30px;
     position: absolute;
     border-radius: 10px;
-    background-color:rgba(128, 128, 128, 0.2);
+    background-color:rgba(128, 128, 128, 0.3);
     color: white;
     width: 4rem;
     height: 2rem;
@@ -559,7 +559,7 @@ video{
 .review-left h2{
     font-size: 1.7rem;
     font-weight: 500;
-    font-family: 'Poppins',sans-serif;
+    /* font-family: 'Poppins',sans-serif; */
 }
 
 .review-left span{
@@ -610,8 +610,6 @@ video{
 
 
 
-
-
 @media screen and (max-width: 1024px) {
     /* Navigation adjustments */
     nav {
@@ -642,11 +640,33 @@ video{
     }
 
     /* Hero section adjustments */
+
+    .hero{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content{
+        height: 80vh;
+    }
+
+    .video{
+        width: 100%;
+        height: 100vh;
+    }
+
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
     .tags {
         width: 90%;
         font-size: 2rem;
         padding: 1rem;
         text-align: center;
+
     }
 
     .tags p {
@@ -663,6 +683,7 @@ video{
     /* Service section mobile layout */
     .service {
         padding: 1rem;
+        height: 130vh;
     }
 
     .service h1 {
@@ -671,16 +692,17 @@ video{
     }
 
     .service-content {
-        width: 95vw;
-        grid-template-columns: 1fr;
+        width: 80vw;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         margin-top: 1rem;
     }
 
     .service-card {
         height: auto;
+        width: 100%;
         min-height: 30vh;
-        padding: 1rem;
+    
     }
 
     .service-card h1 {
@@ -693,8 +715,15 @@ video{
     }
 
     /* Plans section mobile layout */
+
+    .plancard{
+        height: 40vh;
+    }
+
+
     .plans {
         padding: 1rem;
+        height: 100vh;
     }
 
     .plan-title {
@@ -704,28 +733,29 @@ video{
 
     .l-plan-container {
         width: 95%;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
     }
 
     .l-plan-cards {
-        width: 100%;
+        width: auto;
+        min-width: 100%;
         height: auto;
         min-height: 10rem;
         margin-top: 1rem;
-        padding: 1rem;
     }
 
     .plancard-container {
         width: 95vw;
-        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: center;
         gap: 15px;
     }
 
     .s-plan-cards {
         margin-top: 2rem;
-        height: auto;
-        min-height: 30vh;
+        width: 30%;
+        height: 30vh;
         padding: 1rem;
     }
 
@@ -741,19 +771,19 @@ video{
     }
 
     .part1 {
-        position: relative;
-        width: 90%;
+        position: absolute;
+        width: 40%;
         height: auto;
-        right: 0;
-        margin: 2rem auto;
-        text-align: center;
+        right: 2rem;
+        margin: 5rem auto;
+        text-align: left;
     }
 
     /* Join section mobile layout */
     .join {
         flex-direction: column;
         height: auto;
-        min-height: 60vh;
+        min-height: 40vh;
         padding: 1rem;
         font-size: 2rem;
     }
@@ -788,27 +818,49 @@ video{
 
     .btn-join {
         font-size: 1.2rem;
-        width: 100%;
+        width: 30%;
         height: 3rem;
         border-radius: 5px;
-        background: linear-gradient(90deg, #ff512f, #dd2476);
+        border: 2px solid white;
         color: white;
     }
 
     .join-left > hr {
         width: 10rem;
-        margin-top: -5%;
+        align-self: center;
+        margin-top: -8rem;
     }
 
     /* General mobile adjustments */
     .blend {
-        min-height: 20vh;
+        height: 20vh;
     }
 
-    .reviews, .video {
+    .reviews{
         height: auto;
-        min-height: 60vh;
+        height: 150vh;
         padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .review-right{
+        position: relative;
+        margin-right: -15rem;
+    }
+
+    .controls{
+        margin-top: -57rem;
+        margin-right: -13rem;
+        font-size: 4rem;
+    }
+
+    .review-left{
+        width: 80%;
+        position: relative;
+        text-align: center;
     }
 
     /* Reduce font sizes for mobile */
