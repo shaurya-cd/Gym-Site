@@ -22,17 +22,15 @@ function Services() {
   useGSAP(()=>{
     gsap.from(serviceRef.current.children,{
       opacity:0,
-      x:1000,
+      x:50,
       duration:1,
       ease:'power3.easeIn',
       stagger: 0.3,
-      transform:"translateX(-67%)",
       scrollTrigger:{
         trigger:serviceRef.current,
-        start: 'top 10%',         // when top of element hits 80% of viewport
-        end: 'bottom 20%',
+        start: 'top 20%',
+        end: 'top 50%',
         scrub:1,
-        pin:true
       }
     })
   })

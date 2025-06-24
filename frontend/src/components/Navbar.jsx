@@ -29,7 +29,7 @@ function Navbar() {
         <a href='#services'>Services</a>
         <a href='#about'>About Us</a>
         <a href='#plans'>Pricing</a>
-        <a href='#review'>Review</a>
+        <a href='#review'>Trainers</a>
         <button className="btn1" ><a href="#join">Join Us</a></button>
       </div>
 
