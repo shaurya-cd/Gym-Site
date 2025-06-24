@@ -834,7 +834,7 @@ video{
 
     /* General mobile adjustments */
     .blend {
-        height: 20vh;
+        display: none;
     }
 
     .reviews{
