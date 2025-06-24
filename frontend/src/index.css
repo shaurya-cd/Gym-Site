@@ -683,7 +683,7 @@ video{
     /* Service section mobile layout */
     .service {
         padding: 1rem;
-        height: 130vh;
+        height: 160vh;
     }
 
     .service h1 {
@@ -702,7 +702,7 @@ video{
         height: auto;
         width: 100%;
         min-height: 30vh;
-    
+        margin-top: 6rem;
     }
 
     .service-card h1 {
@@ -719,7 +719,6 @@ video{
     .plancard{
         height: 40vh;
     }
-
 
     .plans {
         padding: 1rem;
@@ -742,7 +741,7 @@ video{
         min-width: 100%;
         height: auto;
         min-height: 10rem;
-        margin-top: 1rem;
+        margin-top: 4rem;
     }
 
     .plancard-container {
@@ -777,6 +776,7 @@ video{
         right: 2rem;
         margin: 5rem auto;
         text-align: left;
+        font-size: 0.8rem;
     }
 
     /* Join section mobile layout */
@@ -796,7 +796,8 @@ video{
     }
 
     .join-right {
-        width: 100%;
+        height: auto;
+        min-height: 80vh;
     }
 
     .email-container {
@@ -838,7 +839,7 @@ video{
 
     .reviews{
         height: auto;
-        height: 150vh;
+        height: 190vh;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -848,13 +849,44 @@ video{
 
     .review-right{
         position: relative;
-        margin-right: -15rem;
+        height: 50%;
+        width: 100%;
     }
 
+    .review-right img{
+        position: absolute;
+        width: 17rem;
+        height: 20rem;
+        object-fit: cover;
+        left: 3rem;
+        margin-top: 2rem;
+    }
+
+    .review-right>:nth-child(1){
+        position: absolute;
+        left: 2rem;
+        width: 17rem;
+        height: 20rem;
+        border: 2px solid #ff512f;
+        background-color: transparent;
+    }
+
+    .review-right>:nth-child(2){
+        position: absolute;
+        left: 4rem;
+        width: 17rem;
+        height: 20rem;
+        background: linear-gradient(90deg, #ff512f, #dd2476);
+        margin-top: 4rem;
+    }
+
+
+
     .controls{
-        margin-top: -57rem;
+        margin-top: -50rem;
         margin-right: -13rem;
         font-size: 4rem;
+        left: 7rem;
     }
 
     .review-left{
