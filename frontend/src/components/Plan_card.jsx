@@ -1,8 +1,10 @@
 import React from 'react'
+import Blend from './Blend'
 
 function PlanCard() {
   return (
     <div className="plancard">
+      <Blend />
       <div className='plancard-container'>
           <div className="s-plan-cards">
               <h1>clubpass</h1>

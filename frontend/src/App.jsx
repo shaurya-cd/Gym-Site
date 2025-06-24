@@ -22,7 +22,6 @@ function App() {
         <Navbar />
         <div className='content'>
           <Title />
-          <Blend />
         </div>
         <PlanCard />
         <Services />
