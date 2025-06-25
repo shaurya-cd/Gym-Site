@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+import bg from '../assets/FIGHT-CLUB-GRAPHIC.png'
 
 function About() {
 
@@ -29,6 +30,7 @@ function About() {
           <p>Founded in 2005, FIGHT CLUB was built with a simple mission: to make fitness accessible, empowering, and enjoyable for everyone — from beginners to pros. Our team of certified trainers, nutrition experts, and wellness coaches work together to guide you at every step of your journey.</p>
           <h1>We build a healthier, stronger community — one rep, one step, one member at a time.</h1>
         </div>
+        <img src={bg} alt="" style={{objectFit:'cover'}}/>
       </div>    
     </>
   )
