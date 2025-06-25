@@ -599,8 +599,37 @@ video{
     margin-bottom: -22rem;
 }
 
+.footer{
+    height: 15vh;
+    width: 100vw;
+    background-color: rgb(10, 10, 21);
+    color: #b4a9a7;
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
 
+.address, .call, .email, .workinghr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
+.workinghr{
+    width: 20%;
+}
+
+.follow{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(14, 14, 27);
+    color: white;
+    font-size: 1.5rem;
+}
 
 
 
@@ -912,6 +941,22 @@ video{
         text-align: center;
     }
 
+    .footer{
+        display: block;
+        min-height: 40vh;
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .workinghr{
+        width: 100%;
+    }
+
+    .follow{
+        font-size: 1rem;
+    }
+
     /* Reduce font sizes for mobile */
     .plans {
         font-size: 1.5rem;
@@ -929,6 +974,7 @@ video{
         font-size: 1rem;
     }
 }
+
 
 
 
