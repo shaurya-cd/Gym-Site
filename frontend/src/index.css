@@ -17,7 +17,7 @@
 html{
     scroll-behavior: smooth;
     left: 0%;
-    overflow-x: hidden;
+    background-color: rgb(14, 15, 31);
 }
 
 .hero{
@@ -26,8 +26,8 @@ html{
 }
 
 video{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -632,6 +632,48 @@ video{
     font-size: 1.5rem;
 }
 
+.foot{
+    color: white;
+    background: linear-gradient(90deg, #ff512f, #dd2476);
+    text-align: center;
+}
+
+
+
+
+.menu {
+    display: none;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.ptlinks{
+    display: none;
+}
+
+.show {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.438);
+    backdrop-filter: blur(50px);
+    padding: 3rem;
+    justify-content: center;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    color: white;
+}
+
+.show a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.close {
+    cursor: pointer;
+}
 
 
 
@@ -644,6 +686,19 @@ video{
         height: auto;
         min-height: 10vh;
         flex-wrap: wrap;
+        width: auto;
+        min-width: 100vw;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        font-size: 2.2rem;
+        color: white;
+
     }
 
     .logo {
@@ -678,13 +733,13 @@ video{
     }
 
     .video{
-        width: 100%;
+        width: 100vw;
         height: 100vh;
     }
 
     video{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         object-fit: cover;
     }
 
@@ -732,12 +787,16 @@ video{
         margin-top: 6rem;
     }
 
+    .service-overlay{
+        height: 100%;
+    }
+
     .service-card h1 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .service-card p {
-        font-size: 0.8rem;
+        font-size: 0.5rem;
         margin-top: 10px;
     }
 
@@ -749,7 +808,8 @@ video{
 
     .plans {
         padding: 1rem;
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
     }
 
     .plan-title {
@@ -869,8 +929,7 @@ video{
     }
 
     .reviews{
-        height: auto;
-        height: 190vh;
+        height: 170vh;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -974,6 +1033,12 @@ video{
     .plans h2 {
         font-size: 1rem;
     }
+
+    .basic ol li, .standard ol li, .premium ol li{
+        font-size: 0.5rem;
+        margin-right: 2rem;
+        margin-left: -2rem;
+    }
 }
 
 
@@ -1024,5 +1089,3 @@ video{
         font-size: 1.5rem;
     }
 }
-
-

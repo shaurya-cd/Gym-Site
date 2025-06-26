@@ -5,8 +5,8 @@ function Footer() {
     <>
       <div className='footer'>
         <div className="footer-title">
-          @Fight Club
-          #Stronger Every Day
+          <p style={{fontSize:'1rem'}}>@Fight Club</p>
+          <p style={{fontSize:'0.7rem'}}>#Stronger Every Day</p>
         </div>
         <div className="address">
           <h1>📍 Address</h1>

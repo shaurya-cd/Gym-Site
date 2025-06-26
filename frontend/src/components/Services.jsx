@@ -22,7 +22,7 @@ function Services() {
   useGSAP(()=>{
     gsap.from(serviceRef.current.children,{
       opacity:0,
-      x:50,
+      x:-40,
       duration:1,
       ease:'power3.easeIn',
       stagger: 0.3,
